@@ -1,0 +1,1 @@
+ใส่ใน app script ของระบบเ เจ้งเเตือน+พิกัด ใน google sheet 

@@ -1,0 +1,124 @@
+function readForm() {
+  nameV = document.getElementById("name").value;
+  ageV = document.getElementById("age").value;
+  phoneV = document.getElementById("phone").value;
+  addressV = document.getElementById("address").value;
+  dateofbirthV = document.getElementById("dateofbirth").value;
+  weightV = document.getElementById("weight").value;
+  heightV = document.getElementById("height").value;
+  idcardV = document.getElementById("idcard").value;
+  congenitaldiseaseV = document.getElementById("congenitaldisease").value;
+  historyofdrugallergiesV = document.getElementById("historyofdrugallergies").value;
+  noteV = document.getElementById("note").value;
+
+  // ตรวจสอบความถูกต้องของข้อมูล (ตัวอย่างเช่น สำหรับเบอร์โทร)
+  
+  if (!phoneV.match(/^\d{10}$/)) {
+    alert("เบอร์โทรไม่ถูกต้อง");
+    return false;
+  }
+  // ตรวจสอบข้อมูลเพิ่มเติมที่นี่ (ตามความต้องการ)
+  return true;
+}
+
+document.getElementById("insert").onclick = function () {
+  if (!readForm()) {
+    return; // หยุดการดำเนินการถ้าข้อมูลไม่ถูกต้อง
+  }
+
+  // ถ้าข้อมูลถูกต้อง, ทำการส่งข้อมูลไปยัง Firebase
+  firebase
+    .database()
+    .ref("users/" + nameV)
+    .set({
+      // ข้อมูลที่ต้องการเก็บไว้ใน Firebase
+    });
+
+  // แสดงข้อความแจ้งเตือน
+  alert("ขึ้นทะเทียนเสร็จสิ้น");
+
+  // ล้างค่าในฟอร์ม
+  document.getElementById("name").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("address").value = "";
+  document.getElementById("dateofbirth").value = "";
+  document.getElementById("weight").value = "";
+  document.getElementById("height").value = "";
+  document.getElementById("idcard").value = "";
+  document.getElementById("address").value = "";
+  document.getElementById("congenitaldisease").value = "";
+  document.getElementById("historyofdrugallergies").value = "";
+  document.getElementById("note").value = "";
+};
+
+
+
+
+reset
+function readForm() {
+  nameV = document.getElementById("name").value;
+  ageV = document.getElementById("age").value;
+  phoneV = document.getElementById("phone").value;
+  addressV = document.getElementById("address").value;
+  dateofbirthV = document.getElementById("dateofbirth").value;
+  weightV = document.getElementById("weight").value;
+  heightV = document.getElementById("height").value;
+  idcardV = document.getElementById("idcard").value;
+  congenitaldiseaseV = document.getElementById("congenitaldisease").value;
+  historyofdrugallergiesV = document.getElementById("historyofdrugallergies").value;
+  noteV = document.getElementById("note").value;
+
+  // ตรวจสอบค่าวันเดือนปีเกิด
+  // (ในตัวอย่างนี้จะเช็คเฉพาะรูปแบบ วัน-เดือน-ปี ตามรูปแบบที่กำหนด)
+
+  function readFom() {
+    nameV = document.getElementById("name").value;
+    ageV = document.getElementById("age").value;
+    phoneV = document.getElementById("phone").value;
+    addressV = document.getElementById("address").value;
+    dateofbirthV = document.getElementById("dateofbirth").value;
+    weightV = document.getElementById("weight").value;
+    heightV = document.getElementById("height").value;
+    idcardV = document.getElementById("idcard").value;
+    congenitaldiseaseV = document.getElementById("congenitaldisease").value;
+    historyofdrugallergiesV = document.getElementById("historyofdrugallergies").value;
+    noteV = document.getElementById("note").value;
+  }
+
+
+  document.getElementById("insert").onclick = function () {
+    readFom();
+
+    firebase
+      .database()
+      .ref("users/" + nameV)
+      .set({
+        ชื่อนามสกุล: nameV,
+        อายุ: ageV,
+        เบอร์โทร: phoneV,
+        ที่อยู่: addressV,
+        วันเดือนปีเกิด: dateofbirthV,
+        น้ำหนัก: weightV,
+        ส่วนสูง: heightV,
+        เลขบัตรประชาชน: idcardV,
+        โรคประจำตัว: congenitaldiseaseV,
+        ประวัติการเเพ้ยา: historyofdrugallergiesV,
+        หมายเหตุ: noteV,
+      });
+
+    alert("ขึ้นทะเทียนเสร็จ");
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("dateofbirth").value = "";
+    document.getElementById("weight").value = "";
+    document.getElementById("height").value = "";
+    document.getElementById("idcard").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("congenitaldisease").value = "";
+    document.getElementById("historyofdrugallergies").value = "";
+    document.getElementById("note").value = "";
+  };
+}

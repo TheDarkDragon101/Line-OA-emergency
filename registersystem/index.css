@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+@media only screen and (max-width:320px) {
+    .container-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #image_logo {
+        margin-top: -10px;
+        margin-left: -10px;
+        width: 110px;
+        height: 100px;
+    }
+
+    .head_text {
+        text-align: center;
+        padding-top: 0rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+        font-size: 20px;
+        color: rgba(135, 76, 158, 1);
+    }
+
+    #head_text1 {
+        text-align: center;
+        margin-top: -6rem;
+        margin-left: 4.1rem;
+    }
+
+    #head_text3 {
+        text-align: center;
+        margin-top: -0.75rem;
+        margin-left: 4rem;
+        font-size: 12px;
+    }
+
+    #head_contant {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 20px;
+        
+        margin-left: 30px;
+    }
+
+    .contant_text {
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+
+
+    .input_text {
+        background-color: white;
+        border-style: solid;
+        border-color: rgba(135, 76, 158, 1);
+        border-width: 3px;
+        width: 88%;
+
+    }
+
+
+    #form_text {
+        margin: 0px 0px;
+    }
+
+    .butt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit {
+        background-color: rgba(135, 76, 158, 1);
+        border-color: rgba(135, 76, 158, 1);
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        width: 40%;
+        height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .box {
+        position: fixed;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        background-color: rgba(135, 76, 158, 1);
+    }
+
+}
+
+@media only screen and (min-width:600px) {
+    #image_logo {
+        margin-top: -10px;
+        margin-left: -10px;
+        width: 140px;
+        height: 120px;
+    }
+
+    .head_text {
+        text-align: center;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 23px;
+        color: rgba(135, 76, 158, 1);
+    }
+
+    #head_text1 {
+        position: absolute;
+        text-align: center;
+        margin-top: -6.3rem;
+        margin-left: 7rem;
+
+    }
+
+    #head_text2 {
+        position: absolute;
+        text-align: center;
+        margin-top: -6.3rem;
+        margin-left: 20.25rem;
+    }
+
+    #head_text3 {
+        position: absolute;
+        text-align: center;
+        margin-top: -4.5rem;
+        margin-left: 7rem;
+        font-size: 20px;
+    }
+
+    #head_contant {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 20px;
+        margin-top: -30px;
+        margin-left: 50px;
+    }
+
+    .contant_text {
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+
+
+    .input_text {
+        background-color: white;
+        border-style: solid;
+        border-color: rgba(135, 76, 158, 1);
+        border-width: 3px;
+        width: 90%;
+
+    }
+
+
+    #form_text {
+        margin: 0px 0px;
+    }
+
+    .butt {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+
+    .submit {
+        background-color: rgba(135, 76, 158, 1);
+        border-color: rgba(135, 76, 158, 1);
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        width: 40%;
+        height: 40px;
+        letter-spacing: 2px;
+        bottom: 100px;
+    }
+
+    
+}
+
+@media only screen and (min-width:1200px) {
+    #image_logo {
+        margin-left: 20px;
+        width: 140px;
+        height: 120px;
+    }
+
+    .head_text {
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 0.4rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        font-size: 30px;
+        color: rgba(135, 76, 158, 1);
+    }
+
+    #head_text1 {
+        position: absolute;
+        text-align: center;
+        margin-top: -7rem;
+        margin-left: 7rem;
+    }
+
+    #head_text2 {
+        position: absolute;
+        text-align: center;
+        margin-top: -7rem;
+        margin-left: 27.2rem;
+    }
+
+    #head_text3 {
+        position: absolute;
+        text-align: center;
+        margin-top: -4.5rem;
+        margin-left: 7rem;
+        font-size: 18px;
+    }
+
+    #head_contant {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+        column-gap: 0;
+        row-gap: 30px;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+
+    .contant_text {
+        margin-left: 0;
+        text-align: left;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+
+    .input_text {
+        background-color: white;
+        border-style: solid;
+        border-color: rgba(135, 76, 158, 1);
+        border-width: 3px;
+        width: 310px;
+        margin: 0;
+        height: 20px;
+    }
+
+    .butt {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .submit{
+        color: white;
+        background-color: rgba(135, 76, 158, 1);
+        
+    }
+
+    .box {
+        height: 10%;
+        width: 100%;
+        background-color: rgba(135, 76, 158, 1);
+    }
+
+}

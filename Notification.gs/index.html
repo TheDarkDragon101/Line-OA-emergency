@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- My CSS -->
+  <?!= include('css') ?>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+
+
+  <div class="pt-2 container-lg">
+    <div class="">
+      <div class="d-flex justify-content-center">
+        <img class="justify-content-center" src="https://blogsforuser.firebaseapp.com/image/logo_hup.png" style="width: 140; height: 140px;" alt="#">
+      </div>
+      <div class="mt-2">
+        <h2 class="head-text1 text-center color-main fw-bold">
+          เเจ้งเหตุฉุกเฉิน โรงพยาบาลมหาวิทยาลัยพะเยา
+        </h2>
+      </div>
+      <p class="text-break fs-6 text-wrap color-main text-center ">Emergency warning University of Phayao</p>
+    </div>
+    <form class="d-flex flex-column " id="mainform" style="width: 100%;">
+      <h6 class="head-content mt-2 fw-bold ">
+        เเจ้งเหตุฉุกเฉิน
+      </h6>
+      <div class="form-group">
+        <div class="d-flex justify-content-center mt-2 ">
+          <label class="fw-bold" for="username"></label>
+          <input type="text" class="form-control
+                    input-border width"  id="username" placeholder="ชื่อ-นามสกุล">
+        </div>
+      </div>
+      <div class="form-group mt-2">
+        <div class="d-flex justify-content-center mt-3">
+          <label class="fw-bold " for="phoneNumber"></label>
+          <input type="text" class="form-control input-border width" maxlength="10" minlength="9" id="phoneNumber" placeholder="เบอร์โทร">
+        </div>
+      </div>
+
+      <!-- Check box -->
+      <div class="flex-column mt-3 no-line ">
+        <div>
+          <label class="letter-spacing form-check-label d-inline-flex" for="flexCheckDefault1">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault1" data-text="1 หมดสติ,ไม่รู้สึกตัว,ไม่หายใจ">1 หมดสติ,ไม่รู้สึกตัว,ไม่หายใจ
+                    </label>
+        </div>
+        <div class="mt-2">
+          <label class="letter-spacing form-check-label d-inline-flex" for="flexCheckDefault2">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault2" data-text="2 หายใจเร็ว,หอบเหนื่อยรุนเเรง,หายใจติดขัดมีเสียงดัง">2 หายใจเร็ว,หอบเหนื่อยรุนเเรง,หายใจติดขัดมีเสียงดัง
+                    </label>
+        </div>
+
+        <div class="mt-2">
+          <label class="letter-spacing form-check-label d-inline-flex" for="flexCheckDefault3">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault3" data-text="3 เจ็บหน้าอกเฉียบพลัน,รุนเเรง">3 เจ็บหน้าอกเฉียบพลัน,รุนเเรง
+                    </label>
+        </div>
+
+        <div class="mt-2">
+          <label class="letter-spacing form-check-label d-inline-flex" for="flexCheckDefault4">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault4" data-text="4 ซึมลง,เหงื่อเเตก,ตัวเย็น,หรือมีอาการซักร่วม">4 ซึมลง,เหงื่อเเตก,ตัวเย็น,หรือมีอาการซักร่วม
+                    </label>
+        </div>
+
+        <div class="mt-2">
+          <label class="letter-spacing form-check-label d-inline-flex"for="flexCheckDefault5">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault5" data-text="5 เเขนขาอ่อนเเรงครึ่งซีก,พูดไม่ชัด,หรือซักต่อเนื่องไม่หยุด">5 เเขนขาอ่อนเเรงครึ่งซีก,พูดไม่ชัด,หรือซักต่อเนื่องไม่หยุด
+                    </label>
+        </div>
+
+        <div class="mt-2">
+          <label class="letter-spacing form-check-label d-inline-flex"    for="flexCheckDefault6">
+                    <input class="form-check-input pe-4 me-2" type="checkbox" value="" id="flexCheckDefault6" data-text="6 มีอาการอื่นร่วมที่มีผลต่อการหายใจระบบการไหลเวียนโลหิตเเละระบบสมอง">6 มีอาการอื่นร่วมที่มีผลต่อการหายใจระบบการไหลเวียนโลหิตเเละระบบสมอง
+                    </label>
+        </div>
+
+
+        <div class="mt-4">
+          <button id="btn" class="btn text-color-white fw-bold btn-submit tex">บันทึกข้อมูล</button>
+        </div>
+    </form>
+    <div class="letter-spacing mt-3 fw-bold text-center text-danger">
+      <p>
+        เบอร์โทรติดต่อฉุกเฉินโรงพยาบาล <br> 054-466-757 หรือ 1669
+      </p>
+    </div>
+  </div>
+
+
+  <script>
+    getLocation()
+        let lat, lon
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    lat = position.coords.latitude
+                    lon = position.coords.longitude
+                });
+            }
+        }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+    document.getElementById("btn").addEventListener("click", saveData)
+function isValidThaiPhoneNumber(phoneNumber) {
+    // Regular expression to validate Thai phone number
+    var thaiPhoneNumberRegex = /^(0)([8-9])[0-9]{8}$/;
+    return thaiPhoneNumberRegex.test(phoneNumber);
+}
+
+function saveData() {
+    event.preventDefault();
+
+    // Validate name and phone number
+    var username = document.getElementById("username").value.trim();
+    var phoneNumber = document.getElementById("phoneNumber").value.trim();
+
+    if (!username || !phoneNumber) {
+        Swal.fire({
+            title: "Error",
+            text: "กรุณากรอกชื่อและเบอร์โทรให้ถูกต้อง",
+            icon: "error",
+            timer: 3000
+        });
+        return;
+    }
+
+    // Check if the phone number is valid
+    if (!isValidThaiPhoneNumber(phoneNumber)) {
+        Swal.fire({
+            title: "Error",
+            text: "กรุณากรอกเบอร์โทรให้ถูกต้องตามหลักเบอร์โทรในประเทศไทย",
+            icon: "error",
+            timer: 3000
+        });
+        return;
+    }
+
+    var atLeastOneCheckboxChecked = false;
+
+    var data = {
+        username: username,
+        phoneNumber: phoneNumber,
+        lat: lat,
+        lon: lon,
+        checkboxData: []
+    };
+
+    for (let i = 1; i <= 6; i++) {
+        var checkbox = document.getElementById("flexCheckDefault" + i);
+        if (checkbox && checkbox.checked) {
+            atLeastOneCheckboxChecked = true; // Set the flag to true if at least one checkbox is checked
+            data.checkboxData.push({
+                checked: checkbox.checked,
+                text: checkbox.getAttribute("data-text")
+            });
+        }
+    }
+
+    if (!atLeastOneCheckboxChecked) {
+        Swal.fire({
+            title: "Error",
+            text: "กรุณาเลือกอย่างน้อย 1 ตัวเลือก",
+            icon: "error",
+            timer: 3000
+        });
+        return;
+    }
+    
+    data.checkbox1 = {
+    checked: document.getElementById("flexCheckDefault1").checked,
+    text: document.getElementById("flexCheckDefault1").getAttribute("data-text")
+};
+    data.checkbox2 = {
+        checked: document.getElementById("flexCheckDefault2").checked,
+        text: document.getElementById("flexCheckDefault2").getAttribute("data-text")
+    };
+    data.checkbox3 = {
+        checked: document.getElementById("flexCheckDefault3").checked,
+        text: document.getElementById("flexCheckDefault3").getAttribute("data-text")
+    };
+    data.checkbox4 = {
+        checked: document.getElementById("flexCheckDefault4").checked,
+        text: document.getElementById("flexCheckDefault4").getAttribute("data-text")
+    };
+    data.checkbox5 = {
+        checked: document.getElementById("flexCheckDefault5").checked,
+        text: document.getElementById("flexCheckDefault5").getAttribute("data-text")
+    };
+    data.checkbox6 = {
+        checked: document.getElementById("flexCheckDefault6").checked,
+        text: document.getElementById("flexCheckDefault6").getAttribute("data-text")
+    };
+    
+
+    google.script.run.withSuccessHandler(saveSuccess).userClick(data);
+    document.getElementById("mainform").reset();
+}
+
+function saveSuccess(result) {
+    if (result !== undefined && result !== null && result.success) {
+        Swal.fire({
+            title: "Error",
+            text: "เกิดข้อผิดพลาดในการบันทึกข้อมูล",
+            icon: "error",
+            timer: 3000
+        });
+    } else {
+        Swal.fire({
+            title: "Success",
+            text: "เเจ้งเตือนเสร็จสิ้น โปรดรอเจ้าหน้าที่โทรกลับ",
+            icon: "success",
+            timer: 5000
+        });
+    }
+}
+  </script>
+
+</body>
+
+
+
+</html>

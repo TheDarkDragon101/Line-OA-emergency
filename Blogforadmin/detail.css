@@ -1,0 +1,6 @@
+
+@media (max-width: 500px) {
+    .img-wrapper img {
+        max-width: calc(100% - 20px); /* หรือให้ลดขนาดของรูปภาพให้พอดีกับ card-body */
+    }
+}

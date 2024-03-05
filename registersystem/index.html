@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegisterSystem</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="image/logo_hup.png">
+</head>
+
+<body>
+    <nav>
+      <h1 class="container-text">
+        <img src="image/logo_hup.png" id="image_logo" />
+        <div >
+          <p class="head_text" id="head_text1">
+            <b>งานอุบัติเหตุเเละฉุกเฉิน โรงพยาบาลมหาวิทยาลัยพะเยา</b>
+          </p>
+          <p class="head_text" id="head_text3">
+            <b>Accident and Emergency,University of phayao hospital</b>
+        </p>
+      </div>
+      </h1>
+    </nav>
+
+    <div id="head_contant">
+      <div class="form_text">
+        <p class="contant_text">
+          ชื่อ-นามสกุล(นาย,นาง,นางสาว)
+        </p>
+        <input class="input_text" name="name" id="name" pattern="[a-zA-Zก-๏]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+          อายุ
+        </p>
+        <input class="input_text" name="age" id="age" patten="[0-9]" maxlength="2" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          เบอร์โทร
+        </p>
+        <input class="input_text" name="phone" id="phone" patten="[0-9]" maxlength="10" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          วัน/เดือน/ปี(วันเกิด)
+        </p>
+        <input class="input_text" name="dateofbirth" id="dateofbirth" type="date" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          น้ำหนัก(กิโลกรัม)
+        </p>
+        <input class="input_text" name="weight" id="weight" patten="[0-9]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          ส่วนสูง(เซนติเมตร)
+        </p>
+        <input class="input_text" name="height" id="height" patten="[0-9]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          เลขบัตรประชาชน(13หลัก)
+        </p>
+        <input class="input_text" name="idcard" id="idcard" minlength="13" maxlength="13" pattern="[0-9]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+          ที่อยู่
+        </p>
+        <input class="input_text" name="address" id="address" patten="[ก-๏]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          โรคประจำตัว(หากมี)
+        </p>
+        <input class="input_text" name="congenitaldisease" id="congenitaldisease" patten="[ก-๏]" type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+
+          ประวัติการเเพ้ยา(หากมี)
+        </p>
+        <input class="input_text" name="historyofdrugallergies" id="historyofdrugallergies" patten="[ก-๏]"
+          type="text" />
+      </div>
+
+      <div class="form_text">
+        <p class="contant_text">
+          หมายเหตุ
+        </p>
+        <input class="input_text" name="note" id="note" type="text">
+      </div>
+      <br></br>
+    </div>
+
+    <div class="butt">
+      <button class="submit" id="insert">ยืนยัน</button>
+    </div>
+  
+  <!-- <footer class="box"></footer> -->
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+<script src="myscript.js"></script>
+
+</html>

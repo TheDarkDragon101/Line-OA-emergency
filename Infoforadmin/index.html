@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>เเนวทางการช่วยเหลือ</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom styles -->
+    <link rel="icon" type="image/x-icon" href="image/logo_hup.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa;
+            /* Set a background color for the body */
+        }
+
+        .container {
+            margin-top: 20px;
+            /* Add some top margin to the container */
+        }
+
+        /* Add more custom styles as needed */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
+                    <img src="image/logo_hup.png" class="img-fluid mb-3" alt="Logo">
+                    
+                    <div id="head_text">เเนวทางการช่วยเหลือ</div>
+                    <input type="text" class="form-control mt-4" id="topic" placeholder="หัวข้อ (Topic)">
+
+                    <div class="form-group mt-2">
+                        <input type="file" class="form-control p-1" id="image" accept="images/*"
+                            placeholder="เลือกรูปภาพ" multiple>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="btn" class="btn btn-success" onclick="upload()">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="search">
+            <input class="input_search" type="text" id="search" placeholder="กรอกชื่อโพสต์เพื่อค้นหา">
+            <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+        </div>
+
+        <div class="row" id="posts">
+
+        </div>
+
+        <div class="container">
+
+
+            <script src="utils.js"></script>
+        </div>
+
+    </div>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCGOdvPRmkPXrubQKKLqWKGUWOglSQYoJA",
+            authDomain: "infoforadmin-74692.firebaseapp.com",
+            databaseURL: "https://infoforadmin-74692-default-rtdb.firebaseio.com",
+            projectId: "infoforadmin-74692",
+            storageBucket: "infoforadmin-74692.appspot.com",
+            messagingSenderId: "760141803705",
+            appId: "1:760141803705:web:57f5e5cdc2b07161aceb68",
+            measurementId: "G-T6FQR7H64N"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="defualt.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+    <script src="blog_detail.js"></script>
+</body>
+
+</html>
